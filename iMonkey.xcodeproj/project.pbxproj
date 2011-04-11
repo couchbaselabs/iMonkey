@@ -444,10 +444,10 @@
 		03E8369A135374DB00D64D0D /* os_Darwin.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = os_Darwin.s; path = src/nsprpub/pr/src/md/unix/os_Darwin.s; sourceTree = "<group>"; };
 		03E836A61353765C00D64D0D /* os_Darwin_x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = os_Darwin_x86_64.s; path = src/nsprpub/pr/src/md/unix/os_Darwin_x86_64.s; sourceTree = "<group>"; };
 		03E836A71353765C00D64D0D /* os_Darwin_x86.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = os_Darwin_x86.s; path = src/nsprpub/pr/src/md/unix/os_Darwin_x86.s; sourceTree = "<group>"; };
-		03E8379D135391BE00D64D0D /* libiMonkey-simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiMonkey-simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E8379D135391BE00D64D0D /* libiMonkey-iphonesimulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiMonkey-iphonesimulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA747D9E0F9514B9006C5449 /* iMonkey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMonkey_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libiMonkey-device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiMonkey-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libiMonkey-iphoneos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiMonkey-iphoneos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B7549C124BEDE200497E76 /* js-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "js-config.h"; path = "src/js/src/js-config.h"; sourceTree = SOURCE_ROOT; };
 		D9B7549D124BEDE200497E76 /* jsapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jsapi.cpp; path = src/js/src/jsapi.cpp; sourceTree = SOURCE_ROOT; };
 		D9B7549E124BEDE200497E76 /* jsapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsapi.h; path = src/js/src/jsapi.h; sourceTree = SOURCE_ROOT; };
@@ -684,8 +684,8 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* libiMonkey-device.a */,
-				03E8379D135391BE00D64D0D /* libiMonkey-simulator.a */,
+				D2AAC07E0554694100DB518D /* libiMonkey-iphoneos.a */,
+				03E8379D135391BE00D64D0D /* libiMonkey-iphonesimulator.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1223,9 +1223,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03E836BF135391BE00D64D0D /* iMonkey-simulator */ = {
+		03E836BF135391BE00D64D0D /* iMonkey-iphonesimulator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03E8379A135391BE00D64D0D /* Build configuration list for PBXNativeTarget "iMonkey-simulator" */;
+			buildConfigurationList = 03E8379A135391BE00D64D0D /* Build configuration list for PBXNativeTarget "iMonkey-iphonesimulator" */;
 			buildPhases = (
 				03E836C0135391BE00D64D0D /* Headers */,
 				03E83739135391BE00D64D0D /* Sources */,
@@ -1235,14 +1235,14 @@
 			);
 			dependencies = (
 			);
-			name = "iMonkey-simulator";
+			name = "iMonkey-iphonesimulator";
 			productName = iMonkey;
-			productReference = 03E8379D135391BE00D64D0D /* libiMonkey-simulator.a */;
+			productReference = 03E8379D135391BE00D64D0D /* libiMonkey-iphonesimulator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D2AAC07D0554694100DB518D /* iMonkey-device */ = {
+		D2AAC07D0554694100DB518D /* iMonkey-iphoneos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iMonkey-device" */;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iMonkey-iphoneos" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
@@ -1252,9 +1252,9 @@
 			);
 			dependencies = (
 			);
-			name = "iMonkey-device";
+			name = "iMonkey-iphoneos";
 			productName = iMonkey;
-			productReference = D2AAC07E0554694100DB518D /* libiMonkey-device.a */;
+			productReference = D2AAC07E0554694100DB518D /* libiMonkey-iphoneos.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1277,8 +1277,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* iMonkey-device */,
-				03E836BF135391BE00D64D0D /* iMonkey-simulator */,
+				D2AAC07D0554694100DB518D /* iMonkey-iphoneos */,
+				03E836BF135391BE00D64D0D /* iMonkey-iphonesimulator */,
 			);
 		};
 /* End PBXProject section */
@@ -1503,7 +1503,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "iMonkey-simulator";
+				PRODUCT_NAME = "iMonkey-iphonesimulator";
 			};
 			name = Debug;
 		};
@@ -1517,7 +1517,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "iMonkey-simulator";
+				PRODUCT_NAME = "iMonkey-iphonesimulator";
 			};
 			name = Release;
 		};
@@ -1535,7 +1535,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "iMonkey-device";
+				PRODUCT_NAME = "iMonkey-iphoneos";
 			};
 			name = Debug;
 		};
@@ -1549,7 +1549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "iMonkey-device";
+				PRODUCT_NAME = "iMonkey-iphoneos";
 			};
 			name = Release;
 		};
@@ -1601,7 +1601,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03E8379A135391BE00D64D0D /* Build configuration list for PBXNativeTarget "iMonkey-simulator" */ = {
+		03E8379A135391BE00D64D0D /* Build configuration list for PBXNativeTarget "iMonkey-iphonesimulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03E8379B135391BE00D64D0D /* Debug */,
@@ -1610,7 +1610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iMonkey-device" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iMonkey-iphoneos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
