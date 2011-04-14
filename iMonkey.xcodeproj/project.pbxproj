@@ -688,7 +688,8 @@
 				03E8379D135391BE00D64D0D /* libiMonkey-iphonesimulator.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			path = ../..;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		0867D691FE84028FC02AAC07 /* iMonkey */ = {
 			isa = PBXGroup;
@@ -701,6 +702,7 @@
 			);
 			name = iMonkey;
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -1493,7 +1495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iMonkey.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1504,6 +1506,8 @@
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "iMonkey-iphonesimulator";
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -1511,13 +1515,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
 				DSTROOT = /tmp/iMonkey.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "iMonkey-iphonesimulator";
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
@@ -1525,7 +1531,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iMonkey.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1536,6 +1545,8 @@
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "iMonkey-iphoneos";
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -1543,20 +1554,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				DSTROOT = /tmp/iMonkey.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "iMonkey-iphoneos";
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_FAST_OBJC_DISPATCH = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1573,13 +1590,15 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_FAST_OBJC_DISPATCH = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1595,6 +1614,7 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
