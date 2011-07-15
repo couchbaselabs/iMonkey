@@ -2,6 +2,11 @@
 // Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
 //
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
+// prcpucfg #defines both of these symbols, which are predefined by the compiler.
+// So to prevent warnings, remove the built-in definitions:
+#undef _PR_PTHREADS
+#undef DARWIN
+
+#define HAVE_SOCKLEN_T
+
+#include "prcpucfg.h"
