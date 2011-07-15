@@ -7,6 +7,7 @@
 #undef _PR_PTHREADS
 #undef DARWIN
 
+// Tells the code to use the system socklen_t type. This prevents compiler warnings.
 #define HAVE_SOCKLEN_T
 
 #include "prcpucfg.h"
