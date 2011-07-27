@@ -54,7 +54,7 @@
 
 /* Define to 1 if the standard <stdint.h> header is present and
    useable.  See jstypes.h and jsstdint.h.  */
-#undef JS_HAVE_STDINT_H
+#define JS_HAVE_STDINT_H
 
 /* Define to 1 if the N-byte __intN types are defined by the
    compiler.  */
