@@ -1110,6 +1110,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				PRODUCT_NAME = iMonkey;
 			};
 			name = Debug;
@@ -1127,6 +1128,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iMonkey_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				PRODUCT_NAME = iMonkey;
 			};
 			name = Release;
