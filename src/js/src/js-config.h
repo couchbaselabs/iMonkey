@@ -52,6 +52,9 @@
    entirely too much GC.  */
 #undef JS_GC_ZEAL
 
+// Strings are considered UTF-8 (added for iMonkey)
+#define JS_C_STRINGS_ARE_UTF8
+
 /* Define to 1 if the standard <stdint.h> header is present and
    useable.  See jstypes.h and jsstdint.h.  */
 #define JS_HAVE_STDINT_H
